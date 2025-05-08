@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>401(k) Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>401K Calculator</h1>
+    <div class="rows">
+        <div class = "columns" >
+            <h2>Financial Info</h2>
+            <label for="salary">Annual Salary ($):</label>
+            <input type="number" id="salary" placeholder="ex: 50000" />
+            
+            <label for="contribution">Your Contribution (%):</label>
+            <input type="number" id="contribution" placeholder="ex: 6" />
+            
+            <label for="employerMatch">Employer Match (%):</label>
+            <input type="number" id="employerMatch" placeholder="ex: 50" />
+                        
+            <label for="maxEmployerMatch">Maximum Employer Match (%):</label>
+            <input type="number" id="maxEmployerMatch" placeholder="ex: 3" />
+
+            <label for="annualReturn">Annual Return (%):</label>
+            <input type="number" id="annualReturn" placeholder="ex: 10" />
+        </div>
+
+        <div class="columns">
+            <h2>Personal Info</h2>
+            <label for="age">Current Age:</label>
+            <input type="number" id="age" placeholder="ex: 30" />
+        
+            <label for="retirementAge">Expected Retirement Age:</label>
+            <input type="number" id="retirementAge" placeholder="ex: 65" />
+
+            <label for="currBal">Current 401k Balance:</label>
+            <input type="number" id="currBal" placeholder="ex: 30000" />
+        
+            <label for="salaryIncrease">Expected Salary Increase (%):</label>
+            <input type="number" id="salaryIncrease" placeholder="ex: 3" />
+        </div>
+    </div>
+
+    <button onclick="calculate401k()">Calculate</button>
+
+    <div id="result"></div>
+    <div id="resultChart"></div>
+    <canvas id="myChart" width="400" height="200"></canvas>
+</body> 
+
+<script src="main.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html> 

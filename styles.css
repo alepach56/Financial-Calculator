@@ -1,4 +1,12 @@
-< !DOCTYPE html><html><head><style>
+.button-class {
+    background-color: #4c4eaf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -35,4 +43,23 @@ button {
 .result {
     margin-top: 30px;
     font-weight: bold;
+}
+
+
+/* 401k */ 
+*{
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 50%;
+    padding: 12px;
+    min-height: 300px;
+}
+
+.rows:after{
+    content: "";
+    display: table;
+    clear: both;
 }
