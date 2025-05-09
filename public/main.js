@@ -50,7 +50,7 @@ function calculate401k() {
         salary *= (salaryIncrease + 1);
     }
 
-    document.getElementById('result').innerText = `Estimated 401(k) balance after ${years} years: $${total.toFixed(2)}`;
+    document.getElementById('result').innerText = `Estimated 401(k) balance after ${years} years: $${total.toFixed(0)}`;
 
     const ageLabels = Array.from({ length: years }, (_, i) => age + i);
     if (chart) {
